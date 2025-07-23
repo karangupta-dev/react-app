@@ -1,7 +1,7 @@
 import "./App.css";
+import NavBar from "./components/nav/Nav-bar";
  
-import NavBar from "./components/nav/nav-bar";
-import { RouterOutlet } from "./components/RouterOutlet";
+import { RouterOutlet } from "./components/router-outlet/RouterOutlet";
 
 function App() {
   return (

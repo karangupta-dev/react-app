@@ -1,4 +1,5 @@
 import React from "react";
+import { UserListFunc } from "../components/UserListFunc";
 
 interface State {
   count: number;
@@ -25,8 +26,9 @@ export class Home extends React.Component<{}, State> {
   render() {
     return (
       <>
-        
-        <h2>Welcome to the Home Page</h2>
+        <h1>Welcome to the Home Page</h1>
+        <h4>UserListFunc Example</h4>
+        <UserListFunc/>
       </>
     );
   }

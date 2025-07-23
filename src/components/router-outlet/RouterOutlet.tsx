@@ -1,7 +1,7 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import { Home } from "../pages/home";
-import { About } from "../pages/About";
+import { About } from "../../pages/About";
+import { Home } from "../../pages/Home";
 
 export class RouterOutlet extends React.Component {
   render() {
