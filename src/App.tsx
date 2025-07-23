@@ -1,20 +1,17 @@
-import { useEffect, useState } from "react";
 import "./App.css";
+import { Route, Routes } from "react-router-dom";
+import { Home } from "./pages/home";
+import { About } from "./pages/About";
+import NavBar from "./components/nav/nav-bar";
 
 function App() {
-  const [count, setCount] = useState(0);
-  useEffect(() => {
-    console.log("Runs after every render");
-  }, []);
-
   return (
     <>
-      <h1>Vite + React + TypeScript</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-      </div>
+      <NavBar />
+      <Routes>
+        <Route index element={<Home />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
     </>
   );
 }
